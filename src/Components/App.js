@@ -8,7 +8,7 @@ class App extends React.Component {
       <div className="App">
         <div className="row">
           <nav>
-            <div className="nav-wrapper blue darken-1">
+            <div className="nav-wrapper blue darken-1" class="text-center">
               <a href="/" className="brand-logo">
                 Quick Weather!
               </a>
