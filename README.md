@@ -1,6 +1,4 @@
-A quick weather lookup tool to retrieve real time weather information!
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A quick weather lookup tool to retrieve real time weather information based on location!
 
 ## Running on Docker
 
