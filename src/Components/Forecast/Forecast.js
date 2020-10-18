@@ -23,15 +23,9 @@ const Forecast = () => {
     )
       .then((response) => response.json())
       .then((response) => {
-        setWeatherData(response);
+          setWeatherData(response);
       })
-      .catch(
-        (err) => console.log(err),
-        setWeatherData({
-          cod: "404",
-          message: "city not found",
-        })
-      );
+
   }
 
   return (
@@ -45,8 +39,9 @@ const Forecast = () => {
           onChange={(e) => setLocation(e.target.value)}
         />
         <button type="submit">Get Forecast</button>
-          {weatherData.cod === 200 ? <Dashboard  weatherData={weatherData} /> : <output name="result" htmlFor="a b">Invalid Input!</output>}
-          {weatherData.cod === 404 ? console.log("404 error") : null}
+          {weatherData.cod === 200 ? <Dashboard  weatherData={weatherData} /> :  null}
+          {weatherData.cod === "404" ? <output name="result" htmlFor="a b">Invalid Input!</output> : null}
+
       </form>
 
     </div>
