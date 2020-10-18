@@ -1,4 +1,5 @@
 A quick weather lookup tool to retrieve real time weather information!
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
